@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Quick";
+    src: url("./Fonts/Quicksand-Medium.ttf");
+}
+*::after, *::before , *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quick";
+}
+body{
+    background: #bbb8b8;
+}
+header{
+    transition: all 0.5s ease;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+}
+.block{
+    background-color: rgba(0, 0, 0, 0.501);
+}
+.text{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-size: 30px;
+}
+.text_block{
+    display: flex;
+    color: red;
+}
+.text_2{
+    display: none;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+}
+.text_2_block{
+    display: flex;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px ;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+form input, form button, .card button, .locals-div-btn{
+    padding: 0.5rem 1rem ;
+    border: 1px solid transparent;
+    outline: 4px solid transparent;
+    border-radius: 10px;
+    margin-right: 1rem;
+    font-size: 17px;
+    transition: all 0.5s ease;
+}
+form input:focus, form button:hover, .card button:hover, .locals-div-btn:hover{
+    outline: 4px solid rgba(0, 0, 0, 0.415);
+}
+form input:not(:placeholder-shown){
+    outline: 4px solid rgba(0, 255, 255, 0.626);
+}
+main, .hero{
+    width: 100%;
+    height: auto;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+}
+.card{
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+}
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card h3{
+    font-size: 25px;
+    padding: 1rem;
+}
+.locals{
+    padding-top: 5rem;
+}
+   .locals-div{
+    width: 30%;
+    text-align: center;
+    transform: translateX(-120%);
+    position: fixed;
+    margin-top: 4rem;
+    z-index: 1;
+    opacity: 0;
+    height: auto;
+    background: rgba(128, 128, 128, 0.537);
+    transition: all 0.5s ease ;
+}
+.locals-div_block{
+    transform: translateX(0%);
+    opacity: 1;
+}
